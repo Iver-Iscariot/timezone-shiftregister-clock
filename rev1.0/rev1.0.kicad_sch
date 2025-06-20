@@ -1915,193 +1915,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Jumper:SolderJumper_2_Open"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "JP"
-				(at 0 2.032 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SolderJumper_2_Open"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Solder Jumper, 2-pole, open"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "solder jumper SPST"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SolderJumper*Open*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SolderJumper_2_Open_0_1"
-				(polyline
-					(pts
-						(xy -0.254 1.016) (xy -0.254 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -0.254 -1.016)
-					(mid -1.2656 0)
-					(end -0.254 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -0.254 -1.016)
-					(mid -1.2656 0)
-					(end -0.254 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(arc
-					(start 0.254 1.016)
-					(mid 1.2656 0)
-					(end 0.254 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0.254 1.016)
-					(mid 1.2656 0)
-					(end 0.254 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 1.016) (xy 0.254 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SolderJumper_2_Open_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Switch:SW_DIP_x05"
+		(symbol "Switch:SW_DIP_x08"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -2110,15 +1924,15 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "SW"
-				(at 0 8.89 0)
+				(at 0 13.97 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "SW_DIP_x05"
-				(at 0 -8.89 0)
+			(property "Value" "SW_DIP_x08"
+				(at 0 -11.43 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2143,7 +1957,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "5x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
+			(property "Description" "8x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2161,7 +1975,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SW?DIP?x5*"
+			(property "ki_fp_filters" "SW?DIP?x8*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2170,7 +1984,29 @@
 					(hide yes)
 				)
 			)
-			(symbol "SW_DIP_x05_0_0"
+			(symbol "SW_DIP_x08_0_0"
+				(circle
+					(center -2.032 10.16)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -2.032 7.62)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(circle
 					(center -2.032 5.08)
 					(radius 0.508)
@@ -2218,6 +2054,41 @@
 				(circle
 					(center -2.032 -5.08)
 					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -2.032 -7.62)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 10.287) (xy 2.3622 11.3284)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 7.747) (xy 2.3622 8.7884)
+					)
 					(stroke
 						(width 0)
 						(type default)
@@ -2286,6 +2157,40 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy -1.524 -7.4676) (xy 2.3622 -6.4262)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 10.16)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 7.62)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(circle
 					(center 2.032 5.08)
 					(radius 0.508)
@@ -2341,11 +2246,22 @@
 						(type none)
 					)
 				)
+				(circle
+					(center 2.032 -7.62)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
-			(symbol "SW_DIP_x05_0_1"
+			(symbol "SW_DIP_x08_0_1"
 				(rectangle
-					(start -3.81 7.62)
-					(end 3.81 -7.62)
+					(start -3.81 12.7)
+					(end 3.81 -10.16)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -2355,9 +2271,9 @@
 					)
 				)
 			)
-			(symbol "SW_DIP_x05_1_1"
+			(symbol "SW_DIP_x08_1_1"
 				(pin passive line
-					(at -7.62 5.08 0)
+					(at -7.62 10.16 0)
 					(length 5.08)
 					(name "~"
 						(effects
@@ -2375,7 +2291,7 @@
 					)
 				)
 				(pin passive line
-					(at -7.62 2.54 0)
+					(at -7.62 7.62 0)
 					(length 5.08)
 					(name "~"
 						(effects
@@ -2393,7 +2309,7 @@
 					)
 				)
 				(pin passive line
-					(at -7.62 0 0)
+					(at -7.62 5.08 0)
 					(length 5.08)
 					(name "~"
 						(effects
@@ -2411,7 +2327,7 @@
 					)
 				)
 				(pin passive line
-					(at -7.62 -2.54 0)
+					(at -7.62 2.54 0)
 					(length 5.08)
 					(name "~"
 						(effects
@@ -2429,7 +2345,7 @@
 					)
 				)
 				(pin passive line
-					(at -7.62 -5.08 0)
+					(at -7.62 0 0)
 					(length 5.08)
 					(name "~"
 						(effects
@@ -2447,7 +2363,7 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 5.08 180)
+					(at -7.62 -2.54 0)
 					(length 5.08)
 					(name "~"
 						(effects
@@ -2456,7 +2372,7 @@
 							)
 						)
 					)
-					(number "10"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2465,43 +2381,7 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 2.54 180)
-					(length 5.08)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 0 180)
-					(length 5.08)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -2.54 180)
+					(at -7.62 -5.08 0)
 					(length 5.08)
 					(name "~"
 						(effects
@@ -2519,6 +2399,132 @@
 					)
 				)
 				(pin passive line
+					(at -7.62 -7.62 0)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 10.16 180)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 7.62 180)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 5.08 180)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
 					(at 7.62 -5.08 180)
 					(length 5.08)
 					(name "~"
@@ -2528,7 +2534,25 @@
 							)
 						)
 					)
-					(number "6"
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -7.62 180)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3239,7 +3263,19 @@
 		(uuid "1200e0c1-a7fa-4fa9-b558-6237f4a01385")
 	)
 	(junction
-		(at 69.85 73.66)
+		(at 49.53 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "13108f2b-6cf5-4e1e-aa68-417e3426e382")
+	)
+	(junction
+		(at 49.53 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "13ad8fd6-cbe6-4359-b816-aa3a234f0a13")
+	)
+	(junction
+		(at 69.85 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1a1d1719-b9ab-4cdd-8456-e72b43e4dcd9")
@@ -3275,16 +3311,16 @@
 		(uuid "34eac302-7eec-429f-ac40-9d7fbc946774")
 	)
 	(junction
+		(at 49.53 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "35c364f6-bd79-4fb8-809c-338fa53b1e04")
+	)
+	(junction
 		(at 113.03 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "47f2e14b-eec1-4c75-878b-b843070efb3e")
-	)
-	(junction
-		(at 49.53 73.66)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "48e1e615-5957-4f75-8393-55d605f76e63")
 	)
 	(junction
 		(at 260.35 87.63)
@@ -3299,40 +3335,10 @@
 		(uuid "4da78317-7a7a-44d8-a2d2-2c69afc75d20")
 	)
 	(junction
-		(at 49.53 63.5)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4f19e70f-8d0e-4822-b383-1f7f4c52d4c5")
-	)
-	(junction
 		(at 78.74 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "51695c09-0d1c-407f-a438-3b9bc1522438")
-	)
-	(junction
-		(at 49.53 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "549c6d09-f8f2-41b1-b7b8-c3c8d5f245f0")
-	)
-	(junction
-		(at 49.53 71.12)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5d301d9a-0b37-4adb-8e24-7e5ffb9e7a5d")
-	)
-	(junction
-		(at 49.53 55.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "655675ac-c2ae-4925-a277-4fdd07cbe869")
-	)
-	(junction
-		(at 49.53 60.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "789dff75-a0d3-4372-8d23-16a71b71dd38")
 	)
 	(junction
 		(at 260.35 83.82)
@@ -3359,16 +3365,34 @@
 		(uuid "a2e7f4fc-660f-468c-81a6-1fd958ef1cfa")
 	)
 	(junction
+		(at 49.53 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a2fcef5c-5164-48c3-9eee-60338bbb4d79")
+	)
+	(junction
 		(at 72.39 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a5175710-0941-41ba-8016-41983021d920")
 	)
 	(junction
-		(at 67.31 76.2)
+		(at 67.31 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a9de6f5f-b62c-4290-a047-632dfcb4417c")
+	)
+	(junction
+		(at 49.53 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b26c0b68-901b-4f34-be16-10e3f88ca1a7")
+	)
+	(junction
+		(at 49.53 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b56505fb-526a-4d61-a189-9fc5933c993a")
 	)
 	(junction
 		(at 167.64 71.12)
@@ -3377,16 +3401,16 @@
 		(uuid "c0c880fb-eb0a-42ed-bf7d-5d664e3b8a10")
 	)
 	(junction
-		(at 72.39 71.12)
+		(at 49.53 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d0cdd3fb-22d2-4544-bb95-0d47cbf30b09")
+	)
+	(junction
+		(at 72.39 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dba157a2-7857-4aae-a473-598b09225f3f")
-	)
-	(junction
-		(at 49.53 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e701bb13-f8e1-4719-bbbe-ecbbe6396c3c")
 	)
 	(junction
 		(at 81.28 90.17)
@@ -3412,7 +3436,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 71.12) (xy 72.39 80.01)
+			(xy 72.39 68.58) (xy 72.39 80.01)
 		)
 		(stroke
 			(width 0)
@@ -3522,6 +3546,16 @@
 	)
 	(wire
 		(pts
+			(xy 64.77 68.58) (xy 72.39 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16cf02fa-d006-42f4-bc29-72748a2f63c7")
+	)
+	(wire
+		(pts
 			(xy 142.24 53.34) (xy 143.51 53.34)
 		)
 		(stroke
@@ -3562,16 +3596,6 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 63.5) (xy 49.53 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ee8cab9-a296-4ba7-9835-f2b9a3e28bbd")
-	)
-	(wire
-		(pts
 			(xy 215.9 86.36) (xy 215.9 87.63)
 		)
 		(stroke
@@ -3592,7 +3616,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 71.12) (xy 91.44 71.12)
+			(xy 72.39 68.58) (xy 100.33 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3642,7 +3666,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 76.2) (xy 96.52 76.2)
+			(xy 67.31 73.66) (xy 100.33 73.66)
 		)
 		(stroke
 			(width 0)
@@ -3722,6 +3746,16 @@
 	)
 	(wire
 		(pts
+			(xy 49.53 68.58) (xy 49.53 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38f1d057-7770-42ea-9372-014610df0ca1")
+	)
+	(wire
+		(pts
 			(xy 74.93 66.04) (xy 100.33 66.04)
 		)
 		(stroke
@@ -3729,16 +3763,6 @@
 			(type default)
 		)
 		(uuid "3da9305a-6f75-4fed-be0f-edd70316d15a")
-	)
-	(wire
-		(pts
-			(xy 49.53 60.96) (xy 49.53 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3dd8f9b6-7f57-4914-af29-e3dbe66d6278")
 	)
 	(wire
 		(pts
@@ -3789,16 +3813,6 @@
 			(type default)
 		)
 		(uuid "41215e9c-28ef-4844-a9c2-7452284299ce")
-	)
-	(wire
-		(pts
-			(xy 49.53 73.66) (xy 49.53 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4223a208-274e-460f-ba78-3f1cdf485674")
 	)
 	(wire
 		(pts
@@ -3952,16 +3966,6 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 71.12) (xy 91.44 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "509dbc5e-7a2d-40ef-af1d-2e33221ef908")
-	)
-	(wire
-		(pts
 			(xy 180.34 107.95) (xy 180.34 92.71)
 		)
 		(stroke
@@ -4032,26 +4036,6 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 66.04) (xy 49.53 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5b02aa06-9945-4e33-85b0-df3f2919259c")
-	)
-	(wire
-		(pts
-			(xy 57.15 76.2) (xy 67.31 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5ecf631c-27c5-494e-b49f-344805cb2a84")
-	)
-	(wire
-		(pts
 			(xy 213.36 82.55) (xy 228.6 82.55)
 		)
 		(stroke
@@ -4069,16 +4053,6 @@
 			(type default)
 		)
 		(uuid "5f5dfecb-4b51-4630-9031-eb913ef36758")
-	)
-	(wire
-		(pts
-			(xy 57.15 73.66) (xy 69.85 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "60423788-5269-4d45-b067-ecb8247203b4")
 	)
 	(wire
 		(pts
@@ -4242,6 +4216,26 @@
 	)
 	(wire
 		(pts
+			(xy 49.53 60.96) (xy 49.53 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "721fb0b0-f2e7-4a66-ace7-298982a8bf77")
+	)
+	(wire
+		(pts
+			(xy 64.77 73.66) (xy 67.31 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72c1885c-f51d-4ddd-8266-5db5d7f852de")
+	)
+	(wire
+		(pts
 			(xy 78.74 90.17) (xy 81.28 90.17)
 		)
 		(stroke
@@ -4252,7 +4246,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 76.2) (xy 67.31 80.01)
+			(xy 67.31 73.66) (xy 67.31 80.01)
 		)
 		(stroke
 			(width 0)
@@ -4292,16 +4286,6 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 68.58) (xy 100.33 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "79311d16-fe25-46fd-ac39-de9fd7d4a522")
-	)
-	(wire
-		(pts
 			(xy 163.83 100.33) (xy 176.53 100.33)
 		)
 		(stroke
@@ -4309,16 +4293,6 @@
 			(type default)
 		)
 		(uuid "79ce9f92-5933-4a60-9351-50a0dee48f13")
-	)
-	(wire
-		(pts
-			(xy 96.52 73.66) (xy 100.33 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7abd4148-7f74-497e-9da4-6318390f278d")
 	)
 	(wire
 		(pts
@@ -4572,6 +4546,16 @@
 	)
 	(wire
 		(pts
+			(xy 49.53 58.42) (xy 49.53 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95127ef3-277d-43a9-9486-ff118f413456")
+	)
+	(wire
+		(pts
 			(xy 83.82 90.17) (xy 86.36 90.17)
 		)
 		(stroke
@@ -4592,16 +4576,6 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 73.66) (xy 93.98 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "98f34e4c-c7a6-4fb2-8422-441f7d855dfe")
-	)
-	(wire
-		(pts
 			(xy 163.83 63.5) (xy 189.23 63.5)
 		)
 		(stroke
@@ -4612,23 +4586,13 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 71.12) (xy 49.53 73.66)
+			(xy 49.53 55.88) (xy 49.53 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9b544f93-2b6f-47d0-a169-cc10c7fc6b02")
-	)
-	(wire
-		(pts
-			(xy 93.98 71.12) (xy 100.33 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9dd62b43-0191-4325-848f-1ec8ce079f9d")
 	)
 	(wire
 		(pts
@@ -4702,6 +4666,16 @@
 	)
 	(wire
 		(pts
+			(xy 64.77 71.12) (xy 69.85 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a99d3684-5ddd-4f13-9061-c3d5c11251be")
+	)
+	(wire
+		(pts
 			(xy 231.14 69.85) (xy 241.3 69.85)
 		)
 		(stroke
@@ -4709,16 +4683,6 @@
 			(type default)
 		)
 		(uuid "ad2be11b-fa3f-45c1-85ce-2ae17bf3f3f6")
-	)
-	(wire
-		(pts
-			(xy 49.53 58.42) (xy 49.53 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "af6e9555-83c0-4f37-92a8-5681814f9a9c")
 	)
 	(wire
 		(pts
@@ -5062,7 +5026,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 73.66) (xy 69.85 80.01)
+			(xy 69.85 71.12) (xy 69.85 80.01)
 		)
 		(stroke
 			(width 0)
@@ -5112,6 +5076,16 @@
 	)
 	(wire
 		(pts
+			(xy 49.53 66.04) (xy 49.53 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d634b02b-2ca6-4206-81b8-fdccb530e25e")
+	)
+	(wire
+		(pts
 			(xy 241.3 97.79) (xy 237.49 97.79)
 		)
 		(stroke
@@ -5129,26 +5103,6 @@
 			(type default)
 		)
 		(uuid "d7b41c1f-9470-4abd-8c5f-dc962ab5e962")
-	)
-	(wire
-		(pts
-			(xy 49.53 55.88) (xy 49.53 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "de78d34c-5497-4a20-abc4-26c1e52ad08b")
-	)
-	(wire
-		(pts
-			(xy 57.15 71.12) (xy 72.39 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "df1af9ca-9234-407f-8c98-9932e3b6acf6")
 	)
 	(wire
 		(pts
@@ -5179,16 +5133,6 @@
 			(type default)
 		)
 		(uuid "e040c2c7-5f87-4657-a3e2-6cd492d42eff")
-	)
-	(wire
-		(pts
-			(xy 96.52 76.2) (xy 96.52 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e1964858-6f10-4bab-ba0c-c529288f5c5f")
 	)
 	(wire
 		(pts
@@ -5262,7 +5206,17 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 73.66) (xy 93.98 73.66)
+			(xy 49.53 71.12) (xy 49.53 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f680276e-a0d9-4a95-a9fa-2f02109a70a9")
+	)
+	(wire
+		(pts
+			(xy 69.85 71.12) (xy 100.33 71.12)
 		)
 		(stroke
 			(width 0)
@@ -5329,6 +5283,16 @@
 			(type default)
 		)
 		(uuid "fd186f0d-8af2-487e-ae83-11e1024ee7a5")
+	)
+	(wire
+		(pts
+			(xy 49.53 63.5) (xy 49.53 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffba45d0-96d2-4c7a-b4c1-dfafc4ed9582")
 	)
 	(global_label "Clock"
 		(shape input)
@@ -7115,98 +7079,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_DIP_x05")
-		(at 57.15 60.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "85b35466-3a01-4dbe-a8e1-35f3a2d65f08")
-		(property "Reference" "SW1"
-			(at 57.15 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DIP_x05"
-			(at 57.15 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_SMD:SW_DIP_SPSTx05_Slide_6.7x14.26mm_W8.61mm_P2.54mm_LowProfile"
-			(at 57.15 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 57.15 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "5x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 57.15 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c4583263-7e67-4c26-91c6-4188fa1e8671")
-		)
-		(pin "2"
-			(uuid "39755319-bb10-47be-a9ce-ab1d0c9161cd")
-		)
-		(pin "8"
-			(uuid "a7bf22e5-5aea-4f86-a17e-10fb25320454")
-		)
-		(pin "9"
-			(uuid "23fe1b3a-69e9-4482-8deb-83c2a83456b4")
-		)
-		(pin "4"
-			(uuid "55c51abe-db72-4fd7-aa65-43c172147029")
-		)
-		(pin "6"
-			(uuid "800a2fa1-2d6b-468a-a3ed-8b5941439c18")
-		)
-		(pin "7"
-			(uuid "7289d671-cc91-4c63-9094-04e20de8771d")
-		)
-		(pin "10"
-			(uuid "725f0927-3850-4d12-8f12-d937165fcc6a")
-		)
-		(pin "5"
-			(uuid "167a248c-1acd-4a1a-8c63-93816087bae2")
-		)
-		(pin "3"
-			(uuid "13b33fb8-d1f4-4a88-a9bb-2e3cd7017c2a")
-		)
-		(instances
-			(project ""
-				(path "/8fe827c4-7a1d-475b-9b07-36920366e461"
-					(reference "SW1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_01x06_Socket")
 		(at 135.89 154.94 90)
 		(mirror x)
@@ -7768,76 +7640,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:SolderJumper_2_Open")
-		(at 53.34 76.2 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b50e104d-bd6a-4e3a-be7f-37f26877ebf7")
-		(property "Reference" "JP3"
-			(at 53.34 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "SolderJumper_2_Open"
-			(at 53.34 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
-			(at 53.34 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 53.34 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Solder Jumper, 2-pole, open"
-			(at 53.34 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b8e84e72-43d8-4773-befa-30e6da2811b3")
-		)
-		(pin "2"
-			(uuid "cfc691b0-67dc-4866-a350-45169513a039")
-		)
-		(instances
-			(project "rev1.0"
-				(path "/8fe827c4-7a1d-475b-9b07-36920366e461"
-					(reference "JP3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 151.13 44.45 90)
 		(unit 1)
@@ -8254,76 +8056,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:SolderJumper_2_Open")
-		(at 53.34 73.66 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c9952619-29f3-4a88-9928-f861ddcd2fc6")
-		(property "Reference" "JP2"
-			(at 53.34 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "SolderJumper_2_Open"
-			(at 53.34 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
-			(at 53.34 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 53.34 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Solder Jumper, 2-pole, open"
-			(at 53.34 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0fac62b0-4d11-48bd-9efc-28d5448a943b")
-		)
-		(pin "2"
-			(uuid "adee3cd3-2700-4754-8d6a-4977131be992")
-		)
-		(instances
-			(project "rev1.0"
-				(path "/8fe827c4-7a1d-475b-9b07-36920366e461"
-					(reference "JP2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 153.67 125.73 0)
 		(unit 1)
@@ -8652,76 +8384,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:SolderJumper_2_Open")
-		(at 53.34 71.12 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dcd093fa-c026-419d-9327-d5c4d9e4dc3a")
-		(property "Reference" "JP1"
-			(at 53.34 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "SolderJumper_2_Open"
-			(at 53.34 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
-			(at 53.34 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 53.34 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Solder Jumper, 2-pole, open"
-			(at 53.34 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "16e61b79-6dee-4d95-8f46-a53546a030b8")
-		)
-		(pin "2"
-			(uuid "bfa6bf02-44eb-4662-bb9e-d3848f35f48e")
-		)
-		(instances
-			(project ""
-				(path "/8fe827c4-7a1d-475b-9b07-36920366e461"
-					(reference "JP1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Pack04")
 		(at 72.39 85.09 0)
 		(unit 1)
@@ -8806,6 +8468,116 @@
 			(project ""
 				(path "/8fe827c4-7a1d-475b-9b07-36920366e461"
 					(reference "RN1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_DIP_x08")
+		(at 57.15 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e7fa6b62-9990-4f2a-99d1-b45c2371155b")
+		(property "Reference" "SW2"
+			(at 57.15 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_DIP_x08"
+			(at 57.15 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
+			(at 57.15 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 57.15 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "8x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
+			(at 57.15 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "e7ddf1b5-26ab-40ce-bb58-e362f1808eac")
+		)
+		(pin "15"
+			(uuid "81f578fb-c437-4681-bd17-5508ba2553a0")
+		)
+		(pin "12"
+			(uuid "c6a5e03b-b570-4253-aeb0-29eee43dc334")
+		)
+		(pin "9"
+			(uuid "2b9220c1-16d2-473a-b6fd-c014532f0e8c")
+		)
+		(pin "16"
+			(uuid "b6172a40-0331-4514-b7d6-758474b6efd6")
+		)
+		(pin "14"
+			(uuid "3bc793a9-2b97-4551-9caf-06c9f8836938")
+		)
+		(pin "11"
+			(uuid "c2e3b103-66f7-4f85-821e-159624efa776")
+		)
+		(pin "4"
+			(uuid "2df1bcc8-daec-4bff-881b-99fbedf0898e")
+		)
+		(pin "1"
+			(uuid "bbe9387b-c3e4-4fbc-ae37-4bcd32ced839")
+		)
+		(pin "3"
+			(uuid "2f23634f-53aa-42c5-b522-869532f3f36e")
+		)
+		(pin "2"
+			(uuid "b0e357fc-e8c0-4602-a4ef-22a716f697a9")
+		)
+		(pin "6"
+			(uuid "d373108e-c38b-452e-9664-5ff80462f79d")
+		)
+		(pin "5"
+			(uuid "3fe3d664-3d71-4b3d-9aa9-26d0bedcc266")
+		)
+		(pin "8"
+			(uuid "42284f5e-038a-4588-9832-41d049bb1b30")
+		)
+		(pin "13"
+			(uuid "c1889acd-5a77-4771-b3d5-86271f12e9ea")
+		)
+		(pin "10"
+			(uuid "23c850e9-2e2f-4769-bcaa-5957ddb6888b")
+		)
+		(instances
+			(project ""
+				(path "/8fe827c4-7a1d-475b-9b07-36920366e461"
+					(reference "SW2")
 					(unit 1)
 				)
 			)

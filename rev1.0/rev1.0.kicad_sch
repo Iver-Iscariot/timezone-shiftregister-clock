@@ -5624,6 +5624,28 @@
 			)
 		)
 	)
+	(global_label "GND"
+		(shape input)
+		(at 97.79 116.84 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "96df27e7-96a6-45e2-b2b6-55aa5c3e02f8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 97.79 109.9843 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Shift{slash}load"
 		(shape input)
 		(at 138.43 149.86 90)
@@ -6323,6 +6345,72 @@
 			(project "rev1.0"
 				(path "/8fe827c4-7a1d-475b-9b07-36920366e461"
 					(reference "RN4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 97.79 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3c5b0dfa-749d-4bca-88e9-6dfa25eed4e3")
+		(property "Reference" "#PWR07"
+			(at 97.79 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 97.79 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 97.79 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 97.79 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0db84ef0-a11d-4bd8-9ea6-1119b5c3e335")
+		)
+		(instances
+			(project "rev1.0"
+				(path "/8fe827c4-7a1d-475b-9b07-36920366e461"
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)

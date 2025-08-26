@@ -1,17 +1,91 @@
-// Pins
+
+#include <DS3231.h>
+#include <Wire.h>
+
+
+
+//####################################### time stuff ###############################
+//borrowed from Eric Ayars 3231 library
+
+DS3231 myRTC;
+
+byte year;
+byte month;
+byte date;
+byte dOW;
+byte hour;
+byte minute;
+byte second;
+
+void getDateStuff(byte& year, byte& month, byte& date, byte& dOW,
+                  byte& hour, byte& minute, byte& second) {
+    // Call this if you notice something coming in on
+    // the serial port. The stuff coming in should be in
+    // the order YYMMDDwHHMMSS, with an 'x' at the end.
+    boolean gotString = false;
+    char inChar;
+    byte temp1, temp2;
+    char inString[20];
+    
+    byte j=0;
+    while (!gotString) {
+        if (Serial.available()) {
+            inChar = Serial.read();
+            inString[j] = inChar;
+            j += 1;
+            if (inChar == 'x') {
+                gotString = true;
+            }
+        }
+    }
+    Serial.println(inString);
+    // Read year first
+    temp1 = (byte)inString[0] -48;
+    temp2 = (byte)inString[1] -48;
+    year = temp1*10 + temp2;
+    // now month
+    temp1 = (byte)inString[2] -48;
+    temp2 = (byte)inString[3] -48;
+    month = temp1*10 + temp2;
+    // now date
+    temp1 = (byte)inString[4] -48;
+    temp2 = (byte)inString[5] -48;
+    date = temp1*10 + temp2;
+    // now Day of Week
+    dOW = (byte)inString[6] - 48;
+    // now hour
+    temp1 = (byte)inString[7] -48;
+    temp2 = (byte)inString[8] -48;
+    hour = temp1*10 + temp2;
+    // now minute
+    temp1 = (byte)inString[9] -48;
+    temp2 = (byte)inString[10] -48;
+    minute = temp1*10 + temp2;
+    // now second
+    temp1 = (byte)inString[11] -48;
+    temp2 = (byte)inString[12] -48;
+    second = temp1*10 + temp2;
+}
+//###########################################################################################
+
+
+//####################################  Pins ################################################
 const uint8_t PISO_DATA = 3; // 74HC165 Q7 -> D3
 const uint8_t SIPO_DATA = 4; // 74HC595 DS -> D4
 const uint8_t LATCH_PIN = 5; // 74HC165 SH/LD + 74HC595 RCLK -> D5
 const uint8_t CLOCK_PIN = 6; // CLK shared -> D6
+//###########################################################################################
 
+
+//################################### module count ##########################################
 // Upper bound for possible amount of connected modules (for safety) expand if nececarry
 const uint8_t MAX_165 = 16;           
 const uint8_t MAX_595 = MAX_165 * 2;
-
-
 // the read bytes, and the bytes to be printed out
 uint8_t inputBytes[MAX_165];   // holds one byte per 165
 uint8_t outputBytes[MAX_595];  // holds one byte per 595
+//###########################################################################################
+
 
 
 
@@ -138,7 +212,18 @@ void shiftDigit(int num){  // the function that will be called in the main bit o
 
 
 
+//############################# define module class, ohhh yeah baby, classes ############################################
+class Module {      
+  public:         
+    float timezone;   // +- hours (including decimal)
+    bool isMinute;    // is this a minute module ?
+};
+
+
 void setup() {
+  // For RTC
+  Wire.begin();
+
   // declare pinmodes
   pinMode(PISO_DATA, INPUT);
   pinMode(SIPO_DATA, OUTPUT);
@@ -149,13 +234,44 @@ void setup() {
   digitalWrite(CLOCK_PIN, LOW);
   digitalWrite(LATCH_PIN, HIGH);
 
-  // todo:disable this on final ver.
+  // todo: maybe increase for more accurate time-setting.
   Serial.begin(9600);
 
   fillInput(); // read the input registers
 }
 
 void loop() {
+  // If something is coming in on the serial line, it's
+    // a time correction so set the clock accordingly.
+    if (Serial.available()) {
+        getDateStuff(year, month, date, dOW, hour, minute, second);
+        
+        myRTC.setClockMode(false);  // set to 24h
+        //setClockMode(true); // set to 12h
+        
+        myRTC.setYear(year);
+        myRTC.setMonth(month);
+        myRTC.setDate(date);
+        myRTC.setDoW(dOW);
+        myRTC.setHour(hour);
+        myRTC.setMinute(minute);
+        myRTC.setSecond(second);
+        
+        // Test of alarm functions
+        // set A1 to one minute past the time we just set the clock
+        // on current day of week.
+        myRTC.setA1Time(dOW, hour, minute+1, second, 0x0, true,
+                        false, false);
+        // set A2 to two minutes past, on current day of month.
+        myRTC.setA2Time(date, hour, minute+2, 0x0, false, false,
+                        false);
+        // Turn on both alarms, with external interrupt
+        myRTC.turnOnAlarm(1);
+        myRTC.turnOnAlarm(2);
+        
+    }
+
+
   // todo: implement the RTC, and figure out how it handles timezones, (need to know that before we go to the module-timezone controll)
   // todo: create "module" class, 
     // self variables:
